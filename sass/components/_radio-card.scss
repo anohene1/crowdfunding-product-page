@@ -1,0 +1,142 @@
+.radio-card {
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  padding: 4rem 3rem;
+  margin-top: 3rem;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+ &:focus-within {
+   border: 2px solid $moderate-cyan;
+
+   .enter-pledge {
+     display: grid;
+   }
+ }
+
+  @media (max-width: 600px) {
+    display: grid;
+  }
+
+
+  label {
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      color: $moderate-cyan;
+    }
+  }
+
+
+  &__text-area {
+    margin-left: 5rem;
+
+    .reward-card__quantity {
+      margin-top: 2rem;
+      display: none;
+
+      @media (max-width: 600px) {
+        display: flex;
+      }
+
+      p {
+        margin-left: 5px;
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
+
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.radio__button__area {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    //grid-template-rows: 1fr 1fr;
+  }
+
+  .reward-card-pledge {
+    margin-left: 2rem;
+
+    @media (max-width: 600px) {
+      margin: 0;
+      grid-column: 2;
+    }
+  }
+
+  .reward-card__quantity {
+    margin-left: auto;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+
+    p {
+      margin-left: 0.5rem;
+    }
+  }
+
+  input[type=radio] {
+    accent-color: $dark-cyan;
+    height: 2rem;
+    width: 2rem;
+    display: inline;
+    margin-right: 3rem;
+
+    @media (max-width: 600px) {
+      grid-row: span 2;
+    }
+
+    &:checked + label {
+      color: $moderate-cyan;
+    }
+  }
+
+}
+
+.enter-pledge {
+  border-top: 2px solid $light-gray;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  display: none;
+  grid-template-columns: 1fr 9rem 9rem;
+  grid-gap: 2rem;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 0;
+  }
+
+  p {
+    @media (max-width: 600px) {
+      grid-column: span 2;
+    }
+  }
+
+  .btn {
+    height: 4.5rem;
+    width: 9rem;
+
+    @media (max-width: 600px) {
+      height: 5.5rem;
+      width: 25vw;
+    }
+  }
+}

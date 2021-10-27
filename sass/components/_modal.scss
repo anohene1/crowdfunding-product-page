@@ -1,0 +1,51 @@
+.modal, .modal-thanks {
+  background-color: white;
+  margin: 5%;
+  max-width: 100rem;
+  padding: 5rem 4rem;
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  top: 0;
+
+
+  p {
+    margin: 2rem 0;
+  }
+
+  &__close-btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    path {
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      path {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.modal-thanks.hidden, .modal.hidden {
+  display: none;
+}
+
+.modal-thanks {
+  text-align: center;
+  max-width: 50rem;
+
+  img {
+    margin-bottom: 5rem;
+  }
+
+  button {
+    margin: 0 auto;
+    width: 12rem;
+    height: 5rem;
+    margin-top: 3rem;
+  }
+}

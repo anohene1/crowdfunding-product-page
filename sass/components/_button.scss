@@ -1,0 +1,66 @@
+.btn {
+  background-color: $moderate-cyan;
+  height: 4.9rem;
+  width: 17rem;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  border: none;
+  font-family: 'Commissioner', sans-serif;
+  cursor: pointer;
+
+  &__cta {
+    height: 55px;
+    width: 20rem;
+    margin-right: 20px;
+
+    @media (max-width: 360px) {
+
+    }
+  }
+
+  &:hover {
+    background-color: $dark-cyan;
+  }
+
+  &.disabled {
+    background-color: $gray;
+    cursor: not-allowed;
+  }
+
+  &__bookmark {
+    display: flex;
+    width: 170px;
+    height: 55px;
+    background-color: $light-gray;
+    color: $dark-gray;
+
+    svg circle {
+      transition: fill 0.3s;
+    }
+
+    &:hover {
+      background: $light-gray;
+
+      svg circle {
+        fill: $dark-gray;
+      }
+    }
+
+    span {
+      margin-left: 2rem;
+    }
+
+    @media (max-width: 555px) {
+      span {
+        display: none;
+      }
+
+      width: auto;
+    }
+  }
+}

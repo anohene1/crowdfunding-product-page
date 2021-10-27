@@ -1,0 +1,23 @@
+.header {
+  height: 40rem;
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-size: cover;
+  padding: 5rem 15rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (max-width: 800px) {
+    padding: 5rem 8rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 5rem 5%;
+    background-image: url("../images/image-hero-mobile.jpg");
+
+  }
+}

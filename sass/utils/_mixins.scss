@@ -1,0 +1,16 @@
+@mixin border {
+  border-radius: 5px;
+  border: 1px solid $light-gray;
+}
+
+@mixin container-padding {
+  padding: 5rem 7rem;
+
+  @media (max-width: 555px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 450px) {
+    padding: 5rem 3rem;
+  }
+}

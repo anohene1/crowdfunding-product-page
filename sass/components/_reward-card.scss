@@ -1,0 +1,44 @@
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+
+      .btn {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .reward-card {
+    @include border;
+    padding: 3rem;
+    margin-top: 3rem;
+
+    &.disabled {
+      color: $dark-gray;
+
+      .reward-card-pledge {
+        color: rgba($moderate-cyan, 0.5);
+      }
+
+      p {
+        color: $gray;
+      }
+    }
+
+    &-pledge {
+      color: $moderate-cyan;
+    }
+
+    &__quantity {
+      display: flex;
+      align-items: center;
+
+      &__left {
+        margin: 0;
+        margin-left: 1rem;
+      }
+    }
+  }

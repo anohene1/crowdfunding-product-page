@@ -1,0 +1,9 @@
+.container {
+  background-color: white;
+  margin-top: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  @include border;
+  @include container-padding;
+
+}

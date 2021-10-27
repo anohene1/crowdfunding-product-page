@@ -1,0 +1,27 @@
+.input-field {
+  height: 4.5rem;
+  width: 9rem;
+  border-radius: 50px;
+  border: 2px solid $light-gray;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  @media (max-width: 600px) {
+    height: 5.5rem;
+    width: 25vw;
+  }
+
+  span {
+    color: $gray;
+  }
+
+  input[type=number] {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    width: 80%;
+    text-align: right;
+  }
+}
