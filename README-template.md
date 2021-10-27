@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://rowdfunding-product-page-614.netlify.app/)
+- Live Site URL: [Add live site URL here](https://crowdfunding-product-page-614.netlify.app/)
 
 ## My process
 
